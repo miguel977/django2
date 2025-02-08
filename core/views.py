@@ -4,7 +4,7 @@ def index(request):
     # context = {
     #     'produtos': Produto.objects.all()
     # }
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
 
 def contato(request):
     return render(request, 'contato.html')
