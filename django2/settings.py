@@ -136,5 +136,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = 'media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# configurações de e-mail
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+"""_
+EMAIL_ROST = localhost
+EMAIL_HOSTER_USER = ' no replay@seudominio.com.br
+EMAIL_PORT =  587
+EMAIL_USER_TLS = True
+EMAIL_HOST_PASSWORD = 'sua senha'
+"""
